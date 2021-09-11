@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FavoriteFood" representedClassName="FavoriteFood" syncable="YES" codeGenerationType="class">
+        <attribute name="calorie" optional="YES" attributeType="String"/>
+        <attribute name="diet" optional="YES" attributeType="String"/>
+        <attribute name="foodName" optional="YES" attributeType="String"/>
+        <attribute name="health" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="FavoriteFood" positionX="-63" positionY="-18" width="128" height="104"/>
+    </elements>
+</model>

@@ -7,20 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0100A13226ECF0FC0053995F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100A13126ECF0FC0053995F /* DataController.swift */; };
+		0129001A26EC1F8C00F7F9E0 /* FavoriteFoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129001926EC1F8C00F7F9E0 /* FavoriteFoodListViewController.swift */; };
+		0129001C26EC1FA900F7F9E0 /* NutritionCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129001B26EC1FA900F7F9E0 /* NutritionCardViewController.swift */; };
+		0129001F26EC234900F7F9E0 /* EdamamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129001E26EC234900F7F9E0 /* EdamamResponse.swift */; };
+		0129002126EC238000F7F9E0 /* EdamamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129002026EC238000F7F9E0 /* EdamamClient.swift */; };
+		0129002326EC2AAD00F7F9E0 /* EdamamResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129002226EC2AAD00F7F9E0 /* EdamamResponseCode.swift */; };
+		0129002626EC34A900F7F9E0 /* HomeViewVC+UIImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129002526EC34A900F7F9E0 /* HomeViewVC+UIImagePickerDelegate.swift */; };
+		0129002826EC362500F7F9E0 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0129002726EC362500F7F9E0 /* Inceptionv3.mlmodel */; };
+		0129002C26EC523100F7F9E0 /* HomeViewVC+CoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0129002B26EC523100F7F9E0 /* HomeViewVC+CoreML.swift */; };
+		01435E9D26ED0AA4002A4579 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01435E9C26ED0AA4002A4579 /* FoodTableViewCell.swift */; };
 		01749FBD26E6DC950041BC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01749FBC26E6DC950041BC80 /* AppDelegate.swift */; };
 		01749FBF26E6DC950041BC80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01749FBE26E6DC950041BC80 /* SceneDelegate.swift */; };
-		01749FC126E6DC950041BC80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01749FC026E6DC950041BC80 /* ViewController.swift */; };
+		01749FC126E6DC950041BC80 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01749FC026E6DC950041BC80 /* HomeViewController.swift */; };
 		01749FC426E6DC950041BC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01749FC226E6DC950041BC80 /* Main.storyboard */; };
-		01749FC726E6DC950041BC80 /* Nutrition_Box.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01749FC526E6DC950041BC80 /* Nutrition_Box.xcdatamodeld */; };
+		01749FC726E6DC950041BC80 /* NutritionBox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01749FC526E6DC950041BC80 /* NutritionBox.xcdatamodeld */; };
 		01749FC926E6DC970041BC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01749FC826E6DC970041BC80 /* Assets.xcassets */; };
 		01749FCC26E6DC970041BC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01749FCA26E6DC970041BC80 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0100A13126ECF0FC0053995F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0129001926EC1F8C00F7F9E0 /* FavoriteFoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodListViewController.swift; sourceTree = "<group>"; };
+		0129001B26EC1FA900F7F9E0 /* NutritionCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCardViewController.swift; sourceTree = "<group>"; };
+		0129001E26EC234900F7F9E0 /* EdamamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamResponse.swift; sourceTree = "<group>"; };
+		0129002026EC238000F7F9E0 /* EdamamClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamClient.swift; sourceTree = "<group>"; };
+		0129002226EC2AAD00F7F9E0 /* EdamamResponseCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamResponseCode.swift; sourceTree = "<group>"; };
+		0129002526EC34A900F7F9E0 /* HomeViewVC+UIImagePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewVC+UIImagePickerDelegate.swift"; sourceTree = "<group>"; };
+		0129002726EC362500F7F9E0 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		0129002B26EC523100F7F9E0 /* HomeViewVC+CoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewVC+CoreML.swift"; sourceTree = "<group>"; };
+		01435E9C26ED0AA4002A4579 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		01749FB926E6DC950041BC80 /* Nutrition Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nutrition Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01749FBC26E6DC950041BC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01749FBE26E6DC950041BC80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01749FC026E6DC950041BC80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01749FC026E6DC950041BC80 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		01749FC326E6DC950041BC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01749FC626E6DC950041BC80 /* Nutrition_Box.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nutrition_Box.xcdatamodel; sourceTree = "<group>"; };
 		01749FC826E6DC970041BC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +59,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0129001626EC1F1F00F7F9E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0129002F26EC654000F7F9E0 /* Data Model */,
+				0129002D26EC63F600F7F9E0 /* Machine Learning Model */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0129001726EC1F2600F7F9E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01435E9C26ED0AA4002A4579 /* FoodTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0129001826EC1F2F00F7F9E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0129002426EC348900F7F9E0 /* Extensions */,
+				01749FC026E6DC950041BC80 /* HomeViewController.swift */,
+				0129001926EC1F8C00F7F9E0 /* FavoriteFoodListViewController.swift */,
+				0129001B26EC1FA900F7F9E0 /* NutritionCardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0129001D26EC1FFF00F7F9E0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0129001E26EC234900F7F9E0 /* EdamamResponse.swift */,
+				0129002026EC238000F7F9E0 /* EdamamClient.swift */,
+				0129002226EC2AAD00F7F9E0 /* EdamamResponseCode.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0129002426EC348900F7F9E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0129002526EC34A900F7F9E0 /* HomeViewVC+UIImagePickerDelegate.swift */,
+				0129002B26EC523100F7F9E0 /* HomeViewVC+CoreML.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0129002D26EC63F600F7F9E0 /* Machine Learning Model */ = {
+			isa = PBXGroup;
+			children = (
+				0129002726EC362500F7F9E0 /* Inceptionv3.mlmodel */,
+			);
+			path = "Machine Learning Model";
+			sourceTree = "<group>";
+		};
+		0129002E26EC652C00F7F9E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01749FC826E6DC970041BC80 /* Assets.xcassets */,
+				01749FCA26E6DC970041BC80 /* LaunchScreen.storyboard */,
+				01749FC226E6DC950041BC80 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0129002F26EC654000F7F9E0 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				01749FC526E6DC950041BC80 /* NutritionBox.xcdatamodeld */,
+				0100A13126ECF0FC0053995F /* DataController.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		01749FB026E6DC950041BC80 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +152,14 @@
 		01749FBB26E6DC950041BC80 /* Nutrition Box */ = {
 			isa = PBXGroup;
 			children = (
+				01749FCD26E6DC970041BC80 /* Info.plist */,
 				01749FBC26E6DC950041BC80 /* AppDelegate.swift */,
 				01749FBE26E6DC950041BC80 /* SceneDelegate.swift */,
-				01749FC026E6DC950041BC80 /* ViewController.swift */,
-				01749FC226E6DC950041BC80 /* Main.storyboard */,
-				01749FC826E6DC970041BC80 /* Assets.xcassets */,
-				01749FCA26E6DC970041BC80 /* LaunchScreen.storyboard */,
-				01749FCD26E6DC970041BC80 /* Info.plist */,
-				01749FC526E6DC950041BC80 /* Nutrition_Box.xcdatamodeld */,
+				0129001D26EC1FFF00F7F9E0 /* Networking */,
+				0129001826EC1F2F00F7F9E0 /* Controllers */,
+				0129001726EC1F2600F7F9E0 /* Views */,
+				0129001626EC1F1F00F7F9E0 /* Models */,
+				0129002E26EC652C00F7F9E0 /* Resources */,
 			);
 			path = "Nutrition Box";
 			sourceTree = "<group>";
@@ -140,9 +234,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01749FC126E6DC950041BC80 /* ViewController.swift in Sources */,
+				0129002C26EC523100F7F9E0 /* HomeViewVC+CoreML.swift in Sources */,
+				0129002826EC362500F7F9E0 /* Inceptionv3.mlmodel in Sources */,
+				01749FC126E6DC950041BC80 /* HomeViewController.swift in Sources */,
+				01435E9D26ED0AA4002A4579 /* FoodTableViewCell.swift in Sources */,
+				0129002126EC238000F7F9E0 /* EdamamClient.swift in Sources */,
 				01749FBD26E6DC950041BC80 /* AppDelegate.swift in Sources */,
-				01749FC726E6DC950041BC80 /* Nutrition_Box.xcdatamodeld in Sources */,
+				0129001A26EC1F8C00F7F9E0 /* FavoriteFoodListViewController.swift in Sources */,
+				0129002326EC2AAD00F7F9E0 /* EdamamResponseCode.swift in Sources */,
+				0129002626EC34A900F7F9E0 /* HomeViewVC+UIImagePickerDelegate.swift in Sources */,
+				0129001F26EC234900F7F9E0 /* EdamamResponse.swift in Sources */,
+				0129001C26EC1FA900F7F9E0 /* NutritionCardViewController.swift in Sources */,
+				01749FC726E6DC950041BC80 /* NutritionBox.xcdatamodeld in Sources */,
+				0100A13226ECF0FC0053995F /* DataController.swift in Sources */,
 				01749FBF26E6DC950041BC80 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,13 +451,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		01749FC526E6DC950041BC80 /* Nutrition_Box.xcdatamodeld */ = {
+		01749FC526E6DC950041BC80 /* NutritionBox.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				01749FC626E6DC950041BC80 /* Nutrition_Box.xcdatamodel */,
 			);
 			currentVersion = 01749FC626E6DC950041BC80 /* Nutrition_Box.xcdatamodel */;
-			path = Nutrition_Box.xcdatamodeld;
+			path = NutritionBox.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
