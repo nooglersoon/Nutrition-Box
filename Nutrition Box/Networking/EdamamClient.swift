@@ -48,7 +48,7 @@ class EdamamClient {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             
             guard let data = data else {
-                debugPrint("Error, The data is nil")
+                debugPrint("Error, data is nil")
                 
                 DispatchQueue.main.async {
                     completion(nil,nil,error)
