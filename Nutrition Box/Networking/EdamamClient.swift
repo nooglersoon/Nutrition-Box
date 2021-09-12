@@ -49,7 +49,11 @@ class EdamamClient {
             
             guard let data = data else {
                 debugPrint("Error, The data is nil")
-                completion(nil,nil,error)
+                
+                DispatchQueue.main.async {
+                    completion(nil,nil,error)
+                }
+                
                 return
             }
             
