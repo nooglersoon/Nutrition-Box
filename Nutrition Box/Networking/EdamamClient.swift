@@ -49,7 +49,6 @@ class EdamamClient {
             
             guard let data = data else {
                 debugPrint("Error, The data is nil")
-                debugPrint(response!)
                 completion(nil,nil,error)
                 return
             }

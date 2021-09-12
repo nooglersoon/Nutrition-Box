@@ -48,7 +48,7 @@ class DataController {
         print("autosaving")
         
         guard interval > 0 else {
-            print("cannot set negative autosave interval")
+            debugPrint("cannot set negative autosave interval")
             return
         }
         

@@ -49,6 +49,9 @@ class NutritionCardViewController: UIViewController {
         let favoriteFood = FavoriteFood(context:dataController.viewContext)
         favoriteFood.foodName = foodName
         favoriteFood.calorie = caloriesLabel.text
+        favoriteFood.weight = weightsLabel.text
+        favoriteFood.diet = dietLabels.text
+        favoriteFood.health = healthLabels.text
         try? dataController.viewContext.save()
         
         dismiss(animated: true, completion: nil)
@@ -80,7 +83,20 @@ class NutritionCardViewController: UIViewController {
             dietLabels.text = "\(response.dietLabels.first ?? "-")"
             healthLabels.text = "\(response.healthLabels.first ?? "-")"
             
+        } else {
+            
+            showAlert(title: "Error Fetching Data", message: "Check your Connection")
+            
         }
+        
+    }
+    
+    private func showAlert(title: String, message: String){
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Try Again", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
         
     }
 

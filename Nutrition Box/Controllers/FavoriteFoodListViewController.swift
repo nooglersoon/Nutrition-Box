@@ -22,6 +22,7 @@ class FavoriteFoodListViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // tableView.reloadData()
         setupFetchedResultsController()
         
         if let indexPath = tableView.indexPathForSelectedRow {
@@ -38,14 +39,19 @@ class FavoriteFoodListViewController: UITableViewController {
     }
     
     fileprivate func setupFetchedResultsController() {
-        let fetchRequest:NSFetchRequest<FavoriteFood> = FavoriteFood.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: "foodName", ascending: true)
-        fetchRequest.sortDescriptors = [sortDescriptor]
+       
+        if fetchedResultsController == nil {
+            let fetchRequest:NSFetchRequest<FavoriteFood> = FavoriteFood.fetchRequest()
+            let sortDescriptor = NSSortDescriptor(key: "foodName", ascending: true)
+            fetchRequest.sortDescriptors = [sortDescriptor]
+            
+            fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataController.viewContext, sectionNameKeyPath: nil, cacheName: "favoriteFood")
+            fetchedResultsController.delegate = self
+        }
         
-        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataController.viewContext, sectionNameKeyPath: nil, cacheName: "favoriteFood")
-        fetchedResultsController.delegate = self
         do {
             try fetchedResultsController.performFetch()
+            tableView.reloadData()
         } catch {
             fatalError("The fetch could not be performed: \(error.localizedDescription)")
         }
@@ -62,6 +68,15 @@ class FavoriteFoodListViewController: UITableViewController {
     
     // MARK: - Table view data source
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        
+        if let fetchedResultsController = fetchedResultsController {
+            return fetchedResultsController.sections?.count ?? 0
+        } else {
+            return 0
+        }
+    
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fetchedResultsController.sections?[section].numberOfObjects ?? 0
@@ -77,7 +92,6 @@ class FavoriteFoodListViewController: UITableViewController {
         cell.dietLabel.text = food.diet
         cell.healthLabel.text = food.health
         cell.weightLabel.text = food.weight
-        // cell.detailTextLabel?.text = "Calorie: \(food.calorie) ccal - Weight: \(food.weight) g - Detail: \(food.health) - \(food.diet)"
         
         return cell
     }
@@ -93,21 +107,18 @@ class FavoriteFoodListViewController: UITableViewController {
         super.setEditing(editing, animated: animated)
         tableView.setEditing(editing, animated: animated)
     }
-    
-    
-    
-    
+
     
 }
 
 extension FavoriteFoodListViewController: NSFetchedResultsControllerDelegate {
     
     
-    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
-        
-        let indexPath = IndexPath(row: 0, section: sectionIndex)
-        tableView.insertRows(at: [indexPath], with: .fade)
-    }
+//    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
+//
+//        let indexPath = IndexPath(row: 0, section: sectionIndex)
+//        tableView.insertRows(at: [indexPath], with: .fade)
+//    }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
