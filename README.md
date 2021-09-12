@@ -17,3 +17,9 @@ Users can save the results of identification of food nutrients which will be sto
 
 1. Inception V3 (https://developer.apple.com/machine-learning/models/) - CoreML Model to Identify the Photo Object
 2. Edamam API (https://developer.edamam.com/edamam-docs-nutrition-api) - Nutritions Analysis API to analyze nutrition of the given food (parameters)
+
+## Application Details
+
+1. Build for iOS 14.5 and above
+2. Build with XCode 12
+3. Using Swift 5
