@@ -11,8 +11,8 @@ class EdamamClient {
     
     struct Auth {
         
-        static let appID: String = "73f131bb"
-        static let appKey: String = "955aa2d45f5e6bde2cadd936119f2142"
+        static let appID: String = ""
+        static let appKey: String = ""
         
     }
     
