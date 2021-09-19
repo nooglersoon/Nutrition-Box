@@ -39,7 +39,9 @@ extension HomeViewController {
             
             let label = String(topResult.identifier.description.split(separator: ",")[0]).uppercased()
             
-            self.selectedImageLabel.text = label
+            DispatchQueue.main.async {
+                self.selectedImageLabel.text = label
+            }
             
         }
         

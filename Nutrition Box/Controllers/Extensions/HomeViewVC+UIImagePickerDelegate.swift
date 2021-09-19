@@ -35,7 +35,11 @@ extension HomeViewController: UIImagePickerControllerDelegate,UINavigationContro
             imageDetection(image: ciImage){
                 
                 self.dismiss(animated: true, completion: nil)
-                self.generateCardButton.isEnabled = true
+                
+                DispatchQueue.main.async {
+                    self.generateCardButton.isEnabled = true
+                }
+                
 
             }
             
