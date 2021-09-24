@@ -1,7 +1,7 @@
 # Nutrition-Box
+Nutrition Box is an iOS App that helps people identify the food around them through photos using Machine Learning.
 
-## Descriptions
-Nutrition Box is an iOS App that helps people identify the food around them through photos. 
+## Descriptions 
 Users can choose the source of their photos, namely through photo albums or take pictures directly. 
 After the photo is selected or taken, the photo will be processed for detection using machine learning to tell the name of the food from the processed photo. 
 After that, the user can find out the content of the food such as the total weight (in one unit), the number of calories, and the nutritional content in the food. 
